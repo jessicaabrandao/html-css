@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'love larry';
+            src: url('fontes/love-larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+            Também pode colocar mais de um formato de fonte:
+            @font-face {
+            font-family: 'love larry';
+            src: url('fontes/love-larry.ttf') format('truetype'), url('fontes/love-larry.otf') format('opentype'); 
+            font-weight: normal;
+            font-style: normal;
+            */
+
+            /*  
+        tipos de format (formato do arquivo para fonte)
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advenced typography)
+        - svg
+        */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'love larry', TImes, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ad accusamus perferendis vero earum, culpa quia,
+        nesciunt quos repudiandae quaerat voluptas, voluptate cum dignissimos eaque fuga ex error libero impedit!
+    </p>
+
+</body>
+
+</html>
