@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            caption {
+                font-size: 1,3em;
+                font-weight: bold;
+                padding: 10px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .destaque {
+                background-color: chartreuse;
+            }
+
+            col.cnome {
+                background-color: chartreuse;
+            }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+        </colgroup>
+
+        <!-- 
+        para marcar uma coluna 
+         pode adicionar span caso queira marcar 2 ou mais colunas que estejam ao lado
+         
+         ex: <col class="cnome" span="3"
+         -->
+
+         <!-- para destacar uma linha use
+          background-color
+          -->
+
+        <caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </caption>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>Feminino</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Feminino</td>
+                <td>30</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>Masculino</td>
+                <td>35</td>
+                <td>Engenheira</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Masculino</td>
+                <td>40</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>Masculino</td>
+                <td>45</td>
+                <td>Empresário</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>Feminino</td>
+                <td>50</td>
+                <td>Arquiteta</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
